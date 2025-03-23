@@ -1,0 +1,154 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background: #1a2a44;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    float: left;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    float: right;
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+/* Sections */
+section {
+    padding: 5rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home {
+    background: #e6f0fa;
+}
+
+#about, #skills, #articles {
+    background: #fff;
+}
+
+#projects {
+    background: #e6f0fa;
+}
+
+#contact {
+    background: #fff;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    max-width: 1200px;
+}
+
+.project-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.project-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Skills List */
+.skills-list {
+    list-style: none;
+    margin-top: 2rem;
+    max-width: 800px;
+    text-align: left;
+}
+
+.skills-list li {
+    background: #1a2a44;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+/* Articles Section */
+#articles a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+#articles a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background: #1a2a44;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        float: none;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nav-links li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+    }
+
+    .skills-list {
+        text-align: center;
+    }
+}
